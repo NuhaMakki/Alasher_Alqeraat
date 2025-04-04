@@ -3,7 +3,7 @@
 📅 **Development Duration:** October 2024 – February 2025  
 🌐 **Live Demo:** [Visit the Web App](https://your-hosted-web-link.com)
 
-> **Note:**  
+> **⚠️ Note:**  
 > - The hosted version uses a **sample database**, not the full one due to content rights.  
 > - The web app may be **slow to load on the first visit** because it is hosted on a free server.
 
@@ -106,7 +106,15 @@ By default, the server runs on `http://localhost:3000`.
 
 <br><br>
 
-## 🎥 Demo & Walkthrough
+## 🎥 Web Demo
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing" target="_blank">
+    <img src="Demo/demo.gif" width="70%" alt="AlAsher Web App Demo">
+  </a>
+</p>
+
+🔥 [Watch the full demo video here](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing)
 
 
 
@@ -121,6 +129,7 @@ By default, the server runs on `http://localhost:3000`.
 - **📊 Interactive Tables**: Dynamic tables based on your search criteria.
 - **🌐 User-Friendly Interface**: Easy navigation for students and teachers.
 - **📑 Export as PDF**: Download your findings as a PDF report.
+- **⚠️ Responsive Feedback**: JavaScript-powered alerts guide users when inputs are missing or actions are invalid.
 
 
 
