@@ -52,13 +52,42 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
 3. Filter by Qāri’, Rāwī, or Ṭarīq
 4. Instantly view the results
 
+
+
+<br><br>
+
+### 📖 Features
+
+- **🔍 Search Qira’at Data**: Search for readings by **Qāri’**, **Rāwī**, and **Ṭarīq**.
+- **🔧 Advanced Filtering**: Filter by **Qāri’**, **Rāwī**, or **Ṭarīq**.
+- **📜 Instant Rule Display**: View applied rules like **Hamzah Sākinah** and **Madd Munfaṣil**.
+- **📖 Ayah Search**: Check how an **Āyah** in a **Sūrah** is read across 10 Qira’at.
+- **📊 Interactive Tables**: Dynamic tables based on your search criteria.
+- **🌐 User-Friendly Interface**: Easy navigation for students and teachers.
+- **📑 Export as PDF**: Download your findings as a PDF report.
+- **⚠️ Responsive Feedback**: JavaScript-powered alerts guide users when inputs are missing or actions are invalid.
+
+
+<br><br>
+
+## 🎥 Web Demo
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing" target="_blank">
+    <img src="Demo/demo.gif" width="70%" alt="AlAsher Web App Demo">
+  </a>
+</p>
+
+🔥 [Watch the full demo video here](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing)
+
+
+
 <br><br>
 ## 🛠️ Tech Stack
 
 - **Backend:** Node.js, Express.js  
 - **Frontend:** EJS, CSS, JavaScript, Bootstrap  
 - **Database:** MySQL
-
 
 <br><br>
 
@@ -104,46 +133,21 @@ node index.js
 By default, the server runs on `http://localhost:3000`.
 
 
-<br><br>
-
-## 🎥 Web Demo
-
-<p align="center">
-  <a href="https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing" target="_blank">
-    <img src="Demo/demo.gif" width="70%" alt="AlAsher Web App Demo">
-  </a>
-</p>
-
-🔥 [Watch the full demo video here](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing)
-
 
 
 <br><br>
 
-### 📖 Features
+## ⚠️ Important Notes
 
-- **🔍 Search Qira’at Data**: Search for readings by **Qāri’**, **Rāwī**, and **Ṭarīq**.
-- **🔧 Advanced Filtering**: Filter by **Qāri’**, **Rāwī**, or **Ṭarīq**.
-- **📜 Instant Rule Display**: View applied rules like **Hamzah Sākinah** and **Madd Munfaṣil**.
-- **📖 Ayah Search**: Check how an **Āyah** in a **Sūrah** is read across 10 Qira’at.
-- **📊 Interactive Tables**: Dynamic tables based on your search criteria.
-- **🌐 User-Friendly Interface**: Easy navigation for students and teachers.
-- **📑 Export as PDF**: Download your findings as a PDF report.
-- **⚠️ Responsive Feedback**: JavaScript-powered alerts guide users when inputs are missing or actions are invalid.
-
-
-
-<br><br>
-
-## ⚠️ Disclaimer
-
-- 📦 **Database Not Included**:  
+- 📦 **Database Not Included**  
   Due to content rights, the full database is **not included** in this repository. Only the web application code is provided.
 
-- 🔒 **Hosted Web Version Notice**:  
-  - The online version uses a **sample/test database**, not the full, detailed version.
-  - Performance may be **slightly delayed** on first access due to the nature of **free hosting services**.
+- 🌐 **Live Demo Notice**  
+  - The hosted version uses a **sample/test database**, not the complete dataset.
+  - Initial load time may be **slightly delayed** due to limitations of **free hosting services**.
 
+
+<br><br>
 
 ## 📬 Connect
 
