@@ -3,7 +3,7 @@
 📅 **Development Period:** October 2024 – February 2025  
 <p align="center">
   <a href="https://your-hosted-web-link.com" target="_blank">
-    <img src="demo/Alasher.png" width="70%" alt="AlAsher Web App">
+    <img src="demo/Alasher.png" width="80%" alt="AlAsher Web App">
   </a>
 </p>
 
@@ -80,13 +80,9 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
 
 <p align="center">
   <a href="https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing" target="_blank">
-    <img src="demo/Demo2.gif" width="40%" alt="AlAsher Web App Demo">
+    <img src="demo/Demo2.gif" width="35%" alt="AlAsher Web App Demo">
   </a>
 </p>
-<p align="center">
-  <img src="demo/Demo2.gif" width="60%" alt="AlAsher Web App Demo">
-</p>
-
 🔥 [Watch the full demo video here!!](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing)
 
 
