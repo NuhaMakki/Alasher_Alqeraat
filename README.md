@@ -66,13 +66,13 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
 
 ### 1. Clone the Repository
 
-```bash
+```javascript
 git clone https://github.com/NuhaMakki/Alasher_Alqeraat.git
 cd Alasher_Alqeraat
 ```
 
 ### 2. Install Dependencies
-```bash
+```javascript
 npm install
 ```
 
@@ -97,7 +97,7 @@ const pool = mysql.createPool({
 
 
 ### 4. Run the Project
-```bash
+```javascript
 node index.js
 ```
 
