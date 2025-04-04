@@ -110,53 +110,51 @@ By default, the server runs on `http://localhost:3000`.
 
 
 
+<br><br>
 
-## 📖 Features
+### 📖 Features
 
-- 🔍 Search and filter **تحريرات القراءات** by Qāri’ (قارئ), Rāwī (راوي), or Ṭarīq (طريق)
-- 📚 Detailed view of recitation rules such as:
-  - **Madd Munfaṣil (مد منفصل)**
-  - **Hamz Sākin (همز ساكن)**
-  - Replacements or pronunciations of specific letters
-- 📑 Export and download reports as PDF
-- 📊 Interactive, organized data tables with easy navigation
-- 🌐 RTL (Right-to-Left) support for Arabic content
-- 💡 Manual and methodology pages for guidance
+- **🔍 Search Qira’at Data**: Search for readings by **Qāri’**, **Rāwī**, and **Ṭarīq**.
+- **🔧 Advanced Filtering**: Filter by **Qāri’**, **Rāwī**, or **Ṭarīq**.
+- **📜 Instant Rule Display**: View applied rules like **Hamzah Sākinah** and **Madd Munfaṣil**.
+- **📖 Ayah Search**: Check how an **Āyah** in a **Sūrah** is read across 10 Qira’at.
+- **📊 Interactive Tables**: Dynamic tables based on your search criteria.
+- **🌐 User-Friendly Interface**: Easy navigation for students and teachers.
+- **📑 Export as PDF**: Download your findings as a PDF report.
 
----
+
+
+<br><br>
 
 ## ⚠️ Disclaimer
 
 - 📦 **Database Not Included**:  
-  Due to content rights and size limitations, the full database is **not included** in this repository. Only the web application code is provided.
+  Due to content rights, the full database is **not included** in this repository. Only the web application code is provided.
 
 - 🔒 **Hosted Web Version Notice**:  
   - The online version uses a **sample/test database**, not the full, detailed version.
   - Performance may be **slightly delayed** on first access due to the nature of **free hosting services**.
 
----
 
-## 🤝 Contributors
+## 📬 Connect
 
-Developed by a Computer Science graduate in collaboration with Quran teachers and experts in Qira’at, aiming to simplify access to complex Quranic knowledge using modern technology.
+If you have any questions or suggestions, feel free to connect!
 
----
+<div align="center">
 
-## 📬 Contact
+<a href="mailto:noha.m.makki@gmail.com" rel="nofollow">
+  <img align="left" alt="Nuha's Email" width="95px" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"  style="max-width: 100%;">
+</a>
 
-For questions, feedback, or collaboration:
+<a href="https://www.linkedin.com/in/nuha-makki-a3b15a2b9/" rel="nofollow">
+  <img align="left" alt="Nuha's LinkedIn" width="95px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="max-width: 100%;">
+</a>
 
-- GitHub Issues: [Open an issue](https://github.com/your-username/QURANICWebDevelopment/issues)
-- Email: your.email@example.com
+<a href="https://github.com/NuhaMakki" rel="nofollow">
+  <img align="left" alt="Nuha's GitHub" width="95px" src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white"  style="max-width: 100%;">
+</a>
 
----
-
-## 📄 License
-
-This project is licensed for **educational and non-commercial use**. Redistribution of the full dataset is not allowed without proper authorization.
-
----
-
+</div>
 
 تحرير
 
