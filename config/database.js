@@ -1,19 +1,11 @@
 import mysql from "mysql2";
 
 
-// const database = mysql.createConnection({
-//     host: process.env.DB_HOST || "localhost",
-//     database: process.env.DB_NAME || "alqera_at-alasher-alkubra",
-//     user: process.env.DB_USER || "root",
-//     password: process.env.DB_PASSWORD || ""
-// });
-
-
 const pool = mysql.createPool({
-    host: process.env.DB_HOST || "bbqioawfob1xvvmeohbe-mysql.services.clever-cloud.com",
-    database: process.env.DB_NAME || "bbqioawfob1xvvmeohbe",
-    user: process.env.DB_USER || "uzki6psis3ve6wca",
-    password: process.env.DB_PASSWORD || "2DrHMSSPRl5hUYPN1Sg",
+    host: process.env.DB_HOST,         // Database host
+    database: process.env.DB_NAME,     // Database name
+    user: process.env.DB_USER,         // Database user
+    password: process.env.DB_PASSWORD, // Database password
     port: process.env.DB_PORT || 20070,
     waitForConnections: true,
     connectionLimit: 10, // Number of connections in the pool
