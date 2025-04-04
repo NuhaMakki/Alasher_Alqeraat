@@ -13,18 +13,6 @@ const pool = mysql.createPool({
 });
 
 
-/*
-const pool = mysql.createPool({
-    host: 'bxomtfbjvcacwul6bfki-mysql.services.clever-cloud.com',         // Database host
-    database: 'bxomtfbjvcacwul6bfki',     // Database name
-    user:  'uurumm93yroifxet',         // Database user
-    password:  'sSp1ZKJDYt4KVWdehZfZ', // Database password
-    port: 3306,
-    waitForConnections: true,
-    connectionLimit: 10, // Number of connections in the pool
-    queueLimit: 0
-});
-*/
 
 
 pool.getConnection((err, connection) => {
