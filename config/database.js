@@ -6,12 +6,25 @@ const pool = mysql.createPool({
     database: process.env.DB_NAME,     // Database name
     user: process.env.DB_USER,         // Database user
     password: process.env.DB_PASSWORD, // Database password
-    port: process.env.DB_PORT || 20070,
+    port: process.env.DB_PORT || 3306,
     waitForConnections: true,
     connectionLimit: 10, // Number of connections in the pool
     queueLimit: 0
 });
 
+
+/*
+const pool = mysql.createPool({
+    host: 'bxomtfbjvcacwul6bfki-mysql.services.clever-cloud.com',         // Database host
+    database: 'bxomtfbjvcacwul6bfki',     // Database name
+    user:  'uurumm93yroifxet',         // Database user
+    password:  'sSp1ZKJDYt4KVWdehZfZ', // Database password
+    port: 3306,
+    waitForConnections: true,
+    connectionLimit: 10, // Number of connections in the pool
+    queueLimit: 0
+});
+*/
 
 
 pool.getConnection((err, connection) => {
@@ -244,7 +257,7 @@ const fetchData = {
 
 
     getBab: (callback) => {
-        const sql = "SELECT DISTINCT `1-1abwab`.`BabID`, `1-1abwab`.`BabName` FROM `1-1abwab` ORDER BY `1-1abwab`.`BabID` ASC";
+        const sql = "SELECT DISTINCT `1-1abwab`.`BabID`, `1-1abwab`.`BabName` FROM `1-1abwab` ,  `1-5babkhelaf`  WHERE `1-1abwab`.`BabID` =  `1-5babkhelaf`.`BabID`  ORDER BY `1-1abwab`.`BabID` ASC";
         pool.query(sql, (err, results) => {
             if (err) {
                 console.error("Database query getBab error:", err);
