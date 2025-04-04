@@ -1,11 +1,7 @@
 # Alqeraat Alasher – QURANIC Web App
 
 📅 **Development Period:** October 2024 – February 2025  
-<p align="center">
-  <a href="https://your-hosted-web-link.com" target="_blank">
-    <img src="demo/Alasher2.png" width="80%" alt="AlAsher Web App">
-  </a>
-</p>
+
 
 🌐 **Live Demo:** [Visit the Web App!](https://your-hosted-web-link.com) 🔥🔥
 > ⚠️ **Important Notes:**  
