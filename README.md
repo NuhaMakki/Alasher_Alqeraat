@@ -77,6 +77,7 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
 <br><br>
 
 ## 🎥 Web Demo
+  - 🔥 [Watch the full demo video here!](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view) 
 
 <p align="center">
   <a href="https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing" target="_blank">
@@ -84,7 +85,6 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
   </a>
 </p>
 
-🔥 [Watch the full demo video here!](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view) 
 
 
 <br><br>
