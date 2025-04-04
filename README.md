@@ -156,6 +156,5 @@ If you have any questions or suggestions, feel free to connect!
 
 </div>
 
-تحرير
 
 
