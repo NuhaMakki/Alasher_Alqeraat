@@ -8,18 +8,49 @@
 > - The web app may be **slow to load on the first visit** because it is hosted on a free server.
 
 
-
 ## 📌 Project Description
 
-**QURANIC Web Development** is a web application designed to assist **Quran and Qira’at students and teachers** in navigating complex data related to variations and rules in Quranic recitations (**حريرات القراءات**).
+**Alqeraat Alasher - QURANIC Web App** is a full-stack web platform that helps students and teachers of Quranic recitation (Qira’at) navigate and understand complex variations across the **Ten Qira’at** using a structured and searchable interface.
 
-This project integrates a MySQL database built from the *[al-nashr fه al-qirā'āt al-'ashr Book](https://shamela.ws/book/22642)* by **Ibn Al-Jazari**, organizing a vast amount of detailed Qira’at data into a user-friendly interface.
-
-Users can search and explore:
-- How each **Qāri’**, **Rāwī**, or **Ṭarīq** reads specific elements (e.g., **Madd Munfaṣil**, **Hamz Sākin**)
-- What rules are applied, such as replacing or pronouncing **Hamzah**, with visual and tabular representations.
+The application is based on data from the book **"[النشر في القراءات العشر](https://shamela.ws/book/22642)" (al-Nashr fi al-Qira’at al-‘Ashr)** by **Ibn Al-Jazari**, one of the most authoritative sources on Qira’at. This book contains intricate details of **تحريرات القراءات**—subtle variations in pronunciation and recitation that are essential for advanced Quranic studies.
 
 
+<br><br>
+
+## 💡 Problem It Solves
+
+Traditionally, accessing this knowledge required navigating dense classical texts, reference books, and complex tables. This project simplifies that by:
+
+- 📘 Digitizing the data from the authoritative source: *al-Nashr fī al-Qirā’āt al-‘Ashr* by Ibn Al-Jazari
+- 🗃️ Organizing it into a structured MySQL database
+- 🌐 Providing a user-friendly web interface to explore and analyze the data efficiently
+
+> ### Key capabilities include:
+
+- 🔍 Searching for specific **Khilāfāt** (اختلافات) such as:
+  - **Hamz Sākin** (همز ساكن)
+  - **Madd Munfaṣil** (مد منفصل)  
+  The app dynamically generates tables based on what the user wants to explore — allowing in-depth analysis of how each rule is applied by different Qāri’, Rāwī, and Ṭarīq.
+
+- 🧭 Filtering by:
+  - **Qāri’** (Reader)
+  - **Rāwī** (Narrator)
+  - **Ṭarīq** (Transmission path)
+
+- 📖 Searching how a specific **Āyah in a Sūrah** is read — the app displays all reading variations across the 10 Qira’at for that verse.
+
+
+
+### 🔍 Real Use Case
+
+For example, a student wants to know how the **Hamzah Sākinah** is pronounced in a certain word by **Imam Qālūn** via **Tariq Abi Nasheet**. Instead of searching multiple pages in a book, they can:
+
+1. Visit the web app
+2. Search for the word
+3. Filter by Qāri’, Rāwī, or Ṭarīq
+4. Instantly view the results
+
+<br><br>
 ## 🛠️ Tech Stack
 
 - **Backend:** Node.js, Express.js  
@@ -33,8 +64,8 @@ Users can search and explore:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/QURANICWebDevelopment.git
-cd QURANICWebDevelopment
+git clone https://github.com/NuhaMakki/Alasher_Alqeraat.git
+cd Alasher_Alqeraat
 ```
 
 ### 2. Install Dependencies
