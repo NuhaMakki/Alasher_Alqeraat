@@ -1,0 +1,75 @@
+<div class="container mt-5">
+    <div class="row box-container">
+        <!-- First box, 1/4 width on large screens -->
+        <div class="col-lg-3 col-12 mb-3">
+            <div class="custom-box">
+
+                <div class="inner-container">
+
+                    <div class="empty-wrapper"> 
+                    </div>
+
+
+                    <div class="number-wrapper number-wrapper-a">
+                        <!-- Number input box with validation for values between 1 and 50 -->
+                        <input type="text" id="numberInput1" class="number-input" data-value="1" value="١"
+                            oninput="validateNumberInput(this, 1, 50)"
+                            onkeydown="handleKeydown(event, 1, 50)"
+                            onblur="setDefaultValueIfEmpty(this, 1)">
+                        
+                        <!-- Custom arrows for increment/decrement -->
+                        <div class="arrow-container">
+                            <i class="fas fa-chevron-up arrow-icon" onclick="increment(document.getElementById('numberInput1'), 1, 50)"></i>
+                            <i class="fas fa-chevron-down arrow-icon" onclick="decrement(document.getElementById('numberInput1'), 1, 50)"></i>
+                        </div>
+                    </div>
+
+                    <!-- Reset button -->
+                    <div class="empty-wrapper"> 
+                        <div class="reset-button" title="إعادة الضبط" onclick="clearValueInput1(document.getElementById('numberInput1'),1)">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>           
+        
+            
+        <!-- Second box, 3/4 width on large screens -->
+        <div class="col-lg-9 col-12 mb-3">
+            <div class="custom-box sorahContainer" id="sorahContainer">
+                <!-- Controls for sorahCount -->
+                <div class="sorah-controls">
+                    <button id="nextSorah" title="المقطع السابق" onclick="handlePreviousAyaat(this)"><i class="fa fa-chevron-right"></i></button>
+                    <button id="prevSorah" title="المقطع التالي" onclick="handleNextAyaat(this)"><i class="fa fa-chevron-left"></i></button>
+                    <button id="increaseSorahCount" title="إضافة مقطع" onclick="changeSorahCount(1, this)"><i class="fa fa-plus"></i></button>
+                    <button id="decreaseSorahCount" title="حذف مقطع" onclick="changeSorahCount(-1, this)"><i class="fa fa-minus"></i></button>
+                    <button id="clearSorah" title="إعادة الضبط" onclick="clearValueInput1(document.getElementById('numberInput1'),1)"><i class="fa fa-undo"></i></button>
+                    <button id="showHideSorah" title="إظهار/إخفاء الآية"onclick="showHideSorah()"><i class="fa fa-eye"></i></button>
+                </div>
+                <!-- Containers will be dynamically added here -->
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container ayah-container" id="ayahContainer">
+    <div class="row justify-content-center mt-5">
+        <div class="col-12 text-center">
+            <p class="ayah-text"> <!--updateAyahText()-->  </p>
+        </div>
+    </div>
+</div>

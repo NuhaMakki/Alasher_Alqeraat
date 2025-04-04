@@ -1,0 +1,90 @@
+footer {
+    background-color: rgba(181, 181, 181, 0.22);
+    box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.2);
+    padding: 20px 0 5px 0;
+    direction: rtl; /* Right-to-left for Arabic */
+    font-family: 'Noto Sans Arabic', sans-serif;
+    color: #595C5E;
+}
+
+
+/* List items should be vertical on all screen sizes */
+footer .footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .footer-list li {
+    margin-bottom: 30px;
+}
+
+footer .footer-list li a {
+    text-decoration: none;
+    color: #595C5E !important;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+
+
+footer .footer-list li a:hover {
+    color: #7A9EAE !important;
+}
+
+/* Center the content on smaller screens */
+@media (max-width: 767px) {
+    footer .row {
+        text-align: center;
+    }
+    footer .footer-list {
+        display: block;
+        text-align: center;
+    }
+    /* Adjust margin between list items and the contact section */
+    footer .footer-list li {
+        margin-bottom: 30px; /* Reduce margin on small screens */
+    }
+    footer .footer-list li:last-child {
+        margin-bottom: 0px; /* Custom margin for the last item */
+    }
+}
+
+
+
+/* Styling for icons in the contact section */
+footer .d-inline-flex a {
+    color: #595C5E;
+}
+
+footer .d-inline-flex a img {
+    width: 24px;
+    height: auto;
+}
+
+/* Styling for icons in the contact section */
+footer .icon-link {
+    color: #595C5E;
+    font-size: 30px;
+    transition: color 0.3s ease;
+    margin-right: 15px; /* Adds space between icons */
+    margin: 0 7.5px; /* Adds equal space on both sides of each icon for centering */
+}
+
+
+footer .icon-link:hover {
+    color: #7A9EAE; /* Color changes on hover */
+}
+
+footer p {
+    color: #595C5E;
+    margin: 0 7.5px;
+
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #595C5E;
+    padding-top: 10px;
+    border-top: 1px solid #cccccc; /* Adds a thin line above the copyright section */
+
+}

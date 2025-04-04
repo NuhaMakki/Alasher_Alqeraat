@@ -1,0 +1,38 @@
+
+.content-container {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Title styling with bottom margin for spacing */
+.page-title {
+    font-family: 'Amiri Quran', serif;
+    font-size: 2.5em;
+    color: #537888; /* or #7A9EAE, as per preference */
+    margin-bottom: 30px; /* Space between title and intro */
+}
+
+/* Intro paragraph styling with bottom margin for spacing */
+.intro-paragraph {
+    direction: rtl;
+    font-family: 'Amiri Quran', sans-serif;
+    font-size: 24px;
+    color: #595C5E;
+    text-align: center;
+    line-height: 1.8;
+    margin: 0 10% 25px; /* Adds space between intro and content */
+}
+
+/* Content paragraph styling with text justified */
+.content-paragraph {
+    direction: rtl;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 16px;
+    color: #595C5E;
+    text-align: justify; /* Justified alignment */
+    line-height: 2;
+    margin: 0 10%; /* Even spacing on both sides */
+}

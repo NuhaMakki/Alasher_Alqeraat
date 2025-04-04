@@ -1,0 +1,405 @@
+
+:root {
+    --font-size: 14px;
+    --font-size-special: 16px;
+    --font-size-th: 18px;
+}
+
+body {
+    direction: rtl;
+}
+
+  
+
+
+.custom-table {
+    width: 100%;
+    table-layout: auto;
+    background: #fff; /* Ensure visibility of the shadow */
+    border: none; /* Remove any border that might obscure the shadow */
+    padding: 0px; /* Adjust padding */
+    font-size: var(--font-size);
+    line-height: 1.5;
+    margin: 0; /* Ensure no margin around the table */
+
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+
+}
+
+
+
+.table-responsive {
+    width: 100%;
+    max-width: 1140px; /* Keep it consistent with shwahed-container */
+    margin: 16px auto; /* Center the table */
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+
+}
+  
+.custom-table th {
+    background-color: #F2F2F2;
+    border-bottom: 1pt solid #AFABAB;
+    text-align: right;
+    font-family: 'Amiri Quran', serif;
+    font-weight:400;
+    font-size: var(--font-size-th);  
+    line-height: 2.5;
+}
+
+
+
+.custom-table td {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    /*font-family: "Amiri", serif !important;*/
+    font-weight: 400;
+    text-align: right;
+}
+
+
+.custom-table th,
+.custom-table td {
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.custom-table th:not(.last-column),
+.custom-table td:not(.last-column) {
+    width: auto; /* Automatically adjust to fit content */
+}
+
+.custom-table th.last-column,
+.custom-table td.last-column {
+    width: 100%; /* Take up the remaining space */
+}
+
+/*border*/
+.custom-table tr:not(:last-child) td.last-column {
+    border-bottom: 0.5pt solid #AFABAB;
+}
+
+.custom-table tr:not(:last-child) td:not(.last-column) {
+    border-bottom: 0.5pt solid #FFFFFF;
+}
+
+.custom-table tr:last-child td {
+    border-bottom: none; /* Remove border from the last row */
+}
+
+.custom-table th.last-column,
+.custom-table td.last-column {
+background-color: #FFFFFF;
+border-right: 0.5pt solid #AFABAB;
+}
+
+
+.custom-table th.tareeq-column,
+.custom-table td.tareeq-column {
+    border-right: 0.5pt solid #ffffff;
+
+}
+
+.custom-table th:not(.last-column):not(:first-child),
+.custom-table td:not(.last-column):not(:first-child) {
+    border-right: 0.5pt solid #FFFFFF;
+}
+
+
+.custom-table td.last-column {
+color: #BC403A;
+}
+
+
+/*background*/
+
+.custom-table tr:nth-child(odd) {
+background-color: #DBE5E9;
+}
+
+.custom-table tr:nth-child(even) {
+background-color: #F2F2F2;
+}
+
+
+/*special*/
+
+
+/* Style for special cells in odd rows */
+.custom-table tr:nth-child(odd) td.special-cell {
+    background-color: white ; /*#F3F6F7*/
+    color: #e6e6e6;
+
+}
+
+/* Style for special cells in even rows */
+.custom-table tr:nth-child(even) td.special-cell {
+    background-color: white ; /*#F7F7F7*/
+    color: #e6e6e6;
+
+}
+
+
+
+
+
+
+.custom-table td.special-column {
+    font-family: 'Amiri Quran', serif !important;
+    font-weight: 400;
+    font-size: var(--font-size-special);
+
+}
+
+
+
+
+
+.custom-table th.empty-column {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    color: #747171;
+    font-weight: 400;
+    font-size: var(--font-size);
+    cursor: pointer;
+
+
+}
+
+
+
+
+.dropdown-input.inactive {
+    background-color: #f0f0f0; /* Light gray background */
+    color: rgb(163, 163, 163);; /* Gray text color */
+    cursor: not-allowed; /* Show disabled cursor */
+    border: 1px solid #d0d0d0; /* Lighter border */
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+/* Input Text Styling */
+.text-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(181, 181, 181, 0.22);
+  border-radius: 15px;
+  font-family: 'Noto Sans Arabic', sans-serif;
+  font-size: 16px;
+  text-align: right;
+  direction: rtl;
+  outline: none;
+  color: #595C5E;
+}
+
+/* Placeholder text color */
+.text-input::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.khelaf-controls-wrapper {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Align buttons in a single line */
+    align-items: center; /* Center buttons vertically */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+
+.khelaf-controls-wrapper button {
+    background-color: transparent; /* No background for the button */
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease, box-shadow 0.3s ease;
+    color:  rgb(163, 163, 163); /* Light gray icon color */
+    margin-top: 10px; /* Add top space */
+
+}
+
+.khelaf-controls-wrapper button:hover {
+    color: #537888; /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.khelaf-controls-wrapper button:active {
+    transform: scale(1.1); /* Slight reduction on click */
+}
+
+.khelaf-controls-wrapper i {
+    font-size: 20px; /* Adjust icon size */
+}
+
+.small-arrow {
+    font-size: 16px !important; /* Make the arrows smaller */
+    margin: 0 0px;   /* Add some space around the arrow */
+}
+
+
+
+
+
+.bab-container {
+    position: absolute;
+    width: 40%; 
+    min-width: 300px;
+    max-width: 400px;
+    padding: 10px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Semi-transparent when not hovered */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #fff; /* Background color */
+    overflow: hidden; /* To ensure content doesn't overflow the container */
+    pointer-events: none; /* Ignore clicks when hidden */
+    z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+/*
+.bab-container:hover {
+    opacity: 1; 
+    transition: width 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+*/
+
+
+.bab-controls {
+    position: absolute;
+    top: -30px; /* Position above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden; /* Hidden initially */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.bab-container:hover .bab-controls {
+    opacity: 1; /* Visible on hover */
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+.zoom-controls-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the left */
+    align-items: center; /* Align buttons vertically */
+    width: 95%;
+
+}
+
+.zoom-control {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    width: 40px; /* Adjust button size */
+    height: 40px; /* Adjust button size */
+    display: flex; /* Align icon inside button */
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Make buttons circular */
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease, box-shadow 0.3s ease;
+    color:  rgb(163, 163, 163); /* Light gray icon color */
+}
+
+.zoom-control:hover {
+    color: #537888; /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.zoom-control:active {
+    transform: scale(1.1); /* Slight reduction on click */
+}
+
+.zoom-control i {
+    font-size: 20px; /* Adjust icon size */
+}
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-menu {
+    position: absolute; /* Take it out of the normal document flow */
+    top: 100%; /* Position it below the input field */
+    left: 0; /* Align to the left of the parent container */
+    width: 100%; /* Match the width of the parent */
+    max-height: calc(70vh - 20px); /* 20px space from the bottom of the viewport */
+    overflow-y: auto; /* Allow scrolling if needed */
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: #fff; /* Add a background for visibility */
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better appearance */
+    direction: rtl; /* Maintain RTL compatibility */
+}
+.bab-container {
+    position: relative; /* Required for the dropdown to position relative to this element */
+    overflow: visible; /* Ensure the container does not clip the dropdown */
+}
+
+
+/* Hide the icon by default */
+.last-column .tareeq-icon {
+    visibility: hidden;
+    color: #A3A3A3; /* BC403A   7A9EAE */
+}
+
+/* Show the icon on hover over the last or second-to-last column */
+.last-column:hover .tareeq-icon,
+.last-column:hover ~ .last-column .tareeq-icon {
+    visibility: visible;
+}
+
+
+
+
+/* Scrollbar styling for custom-table and table-responsive */
+.custom-table::-webkit-scrollbar,
+.table-responsive::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-table::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #7A9EAE;
+    border-radius: 4px;
+}
+
+.custom-table::-webkit-scrollbar-track,
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #F2F2F2;
+}

@@ -1,0 +1,122 @@
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: #fff;
+    top: 10%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+    max-height: 80%; /* Adjust max height as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+  float: left;
+  font-size: 14px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #537888; /* Change icon color on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+
+#popupContent {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    overflow-y: auto; /* Enable scrolling inside this box */
+    max-height: 75vh; /* Adjust this height to control scrollable area */
+    margin-top: 15px;
+}
+
+  
+  /* Indentation and Colors */
+  .qarie {
+    margin-right: 0px;
+    color: #BC403A;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-right: 2px solid #BC403A;
+    margin-bottom: 50px;
+
+  }
+  .rawy {
+    margin-right: 20px;
+    color: #15989B;
+    padding: 5px 5px;
+    border-right: 2px solid #15989B;
+    margin-right: 50px;
+    margin-bottom: 30px;
+
+  }
+  .tareeq1 {
+    margin-right: 40px;
+    color: #595C5E;
+    padding: 5px 5px;
+    border-right: 2px solid #595C5E;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+  }
+  .tareeq2 {
+    margin-right: 60px;
+    color: #A3A3A3;
+    padding: 5px 5px;
+    border-right: 2px solid #A3A3A3;
+    margin-bottom: 10px;
+
+  }
+  
+  .book {
+    margin-right: 80px;
+    color: #7A9EAE;
+    padding: 5px 7px;
+    border-right: 2px solid #7A9EAE;
+    font-style: italic;
+  }
+
+  .booknoTareeq2 {
+    margin-right: 140px;
+  }
+  
+  /* Additional Styles */
+  ul {
+    list-style: none;
+    padding-right: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  li ul {
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,30 @@
+
+  /* General Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+/* Ensure the body and html stretch to full height */
+html, body {
+    height: 100%;
+    min-width: 320px;
+  }
+  
+  /* Flexbox layout to push footer to the bottom */
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    background-color: #fff;
+  }
+  
+  /* Make sure the main content area grows and takes available space */
+  main {
+    flex: 1;
+  }
+
+
+

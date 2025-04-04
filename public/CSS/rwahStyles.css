@@ -1,0 +1,276 @@
+.toggle-container {
+    position: fixed;
+    width: 120px;
+    height: 50px;
+    background-color: #A3A3A3 ;  /* #7A9EAE */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+    transition: left 0.3s ease, transform 0.3s ease;
+    rotate: 90deg;
+}
+
+
+#toggleContainer {
+    top: 200px; /* Moved down */
+    left: -30px;
+}
+
+
+#toggleBookContainer {
+    top: 330px; /* Moved down */
+    left: -30px;
+}
+
+/* Toggle button styling */
+.toggle-button {
+    background: none;
+    border: none; /* Ensure no border */
+    outline: none; /* Prevent outline on focus */
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+#toggleButton , #toggleBookButton {
+    width: 120px;
+    height: 50px;
+}
+
+#nestedChecklist , #bookChecklist {
+    position: fixed;
+    top: 130px; /* Moved down */
+    left: 10px;
+    width: 330px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #F2F2F2;
+    border: 1px solid #DBE5E9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    direction: rtl;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 16px;
+    color: #7A9EAE;
+    line-height: 1.8;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+/* General item styling */
+#nestedChecklist > div, #bookChecklist > div {
+    display: block; /* Stack top-level items vertically */
+    padding: 8px 0; /* Add padding to each row */
+}
+
+/* Indent nested levels */
+#nestedChecklist div div {
+    margin-right: 20px; /* More noticeable indentation */
+}
+
+/* Checkbox styling */
+#nestedChecklist  input[type="checkbox"],  #bookChecklist input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #537888; /* Match accent color */
+    transform: scale(1.2); /* Slightly larger checkboxes */
+    margin-left: 8px; /* Space between checkbox and label */
+}
+
+/* Label styling */
+#nestedChecklist label ,  #bookChecklist label {
+    cursor: pointer;
+    font-weight: 500;
+    color: #537888; /* Slightly darker color for labels */
+    transition: color 0.2s ease;
+}
+
+/* Label hover effect */
+#nestedChecklist label:hover ,  #bookChecklist  label:hover{
+    color: #7A9EAE; /* Subtle hover effect */
+}
+
+
+
+/* Expand/Collapse icon styling */
+.expand-icon {
+    background: none;
+    border: none;
+    font-size: 14px; /* Slightly larger for better visibility */
+    color: #A3A3A3;
+    cursor: pointer;
+    margin-right: 8px;
+    padding: 4px;
+    transition: color 0.2s ease, transform 0.3s ease;
+}
+
+
+
+.expand-icon:hover {
+    color: #7A9EAE;
+}
+.expand-icon.collapsed {
+    transform: rotate(180deg); /* Rotate for expanded state */
+}
+
+/* Divider between items */
+#nestedChecklist div:not(:last-child), #bookChecklist div:not(:last-child) {
+    border-bottom: 1px solid #DBE5E9; /* Subtle divider */
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+
+#nestedChecklist, #bookChecklist {
+    direction: rtl; /* Ensure text remains right-to-left */
+    scrollbar-gutter: stable both-edges; /* Prevent layout shift caused by scrollbar */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/**
+#bookChecklist {
+    direction: ltr; /* Change direction to left-to-right to place the scrollbar on the right */
+    /*text-align: right; /* Align text content to the right to maintain RTL text layout */
+    /*scrollbar-gutter: stable; /* Ensure consistent scrollbar behavior */
+    /*overflow-y: auto; /* Enable vertical scrolling */
+    /*overflow-x: hidden; /* Prevent horizontal scrolling */
+/*}
+**/
+
+
+/* Scrollbar styling */
+#nestedChecklist::-webkit-scrollbar , #bookChecklist::-webkit-scrollbar {
+    width: 8px;
+}
+
+#nestedChecklist::-webkit-scrollbar-thumb, #bookChecklist::-webkit-scrollbar-thumb {
+    background-color: #7A9EAE;
+    border-radius: 4px;
+}
+
+#nestedChecklist::-webkit-scrollbar-track, #bookChecklist::-webkit-scrollbar-track {
+    background-color: #F2F2F2;
+}
+
+
+/* Additional style for handling line breaks inside parentheses */
+.split-text {
+    white-space: pre-wrap;
+    display: block; /* Force the parentheses content to be on a new line */
+}
+
+/* Style the text inside parentheses */
+.split-text span {
+    display: block; /* Display the content of parentheses in a new line */
+    margin-top: 5px; /* Add some space between the main text and the parentheses */
+    text-align: center; /* Center-align the parentheses content */
+    color: #7A9EAE; /* You can adjust the color as needed */
+}
+
+.split-checkbox {
+    vertical-align: top; /* Align checkbox with the top of the text */
+    margin-top: 0.3em; /* Adjust spacing as needed for alignment */
+}
+
+
+
+
+
+
+
+
+/* Updated styles for the new buttons and container */
+
+/* Container for the new buttons */
+.button-container-new {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin: 10px auto; /* Center the container horizontally and add vertical spacing */
+    direction: rtl; /* Ensures compatibility with Arabic layout */
+    width: fit-content; /* Adjust width to fit its content */
+}
+
+
+
+/* (Select All) button */
+.select-all-new, .clear-selection-new{
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    color: #7A9EAE; /* White text */
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0px 5px;
+
+}
+
+/* Hover effect for button */
+.select-all-new:hover, .clear-selection-new:hover {
+    color: #5C7A89; /* Slightly darker teal */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+
+/* Styling checkboxes inside the nested checklist */
+.nested-checkbox {
+    margin-right: 10px;
+}
+
+/* Optional: Styling the list items (if applicable) */
+.nested-list-item {
+    margin-bottom: 5px;
+}
+
+
+
+.checkbox-item{
+    padding-right: 10px;
+
+}
+
+
+
+
+/* Style for inactive checkbox */
+.inactive-checkbox {
+    pointer-events: none; /* Disable click events on the checkbox */
+    cursor: not-allowed !important; /* Disable pointer interaction */
+    accent-color: #A3A3A3 !important; /* Grey tone for inactive state */
+    opacity: 0.6 !important; /* Slightly faded appearance */
+    transform: scale(1.2) !important; /* Same size as active checkboxes */
+    margin-left: 8px !important; /* Maintain spacing */
+}
+
+/* Style for label of inactive checkbox */
+.inactive-checkbox + label {
+    cursor: not-allowed !important;
+    color: #B0B0B0 !important; /* Lighter text color */
+    font-style: italic !important; /* Optional: indicate disabled state visually */
+    transition: color 0.2s ease !important;
+}
+
+/* Optional hover effect */
+.inactive-checkbox:hover,
+.inactive-checkbox + label:hover {
+    color: #B0B0B0 !important; /* No hover color change */
+}
+
+
+

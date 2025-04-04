@@ -1,0 +1,62 @@
+
+<!-- 
+<button id="handleTableData" title="جدول" onclick="showTareeqDet(0)"><i class="fa fa-undo"></i></button>
+<button id="handleTableData" title="جدول" onclick="addBabContainer(1)"><i class="fa fa-undo"></i></button>
+-->
+
+
+ 
+<div class="container table-container">
+
+    <!-- Zoom Controls -->
+    <div class="zoom-controls-wrapper">
+        <button id="downloadPDF" class="zoom-control ms-2" title="تنزيل" onclick="downloadTableAsPDF()">
+          <i class="fa fa-download"></i>
+        </button>
+      <!-- 
+      -->
+      <button id="shwahed" class="zoom-control ms-2" title="الشواهد" onclick="toggleShwahed()">
+        <i class="fa fa-book"></i>
+      </button>
+
+      <button id="zoomIn" class="zoom-control" title="تكبيير">
+          <i class="fa fa-search-plus"></i>
+      </button>
+      <button id="zoomOut" class="zoom-control ms-2" title="تصغير">
+          <i class="fa fa-search-minus"></i>
+      </button>
+
+
+    </div>
+    
+
+    <div class="row justify-content-center">
+      <div class="col-12">
+
+        <div class="table-responsive">
+          <table class="table custom-table">
+            <thead>
+              <tr id="table-header"></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+          
+        </div>
+
+      </div>
+    </div>
+
+    
+      <!-- Bab Container for Dynamic Elements -->
+      <div id="babContainer" class="abwab-container">
+        <!-- New Bab Containers will be appended here -->
+      </div>
+
+
+  </div>
+
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>

@@ -1,0 +1,409 @@
+.box-container {
+    direction: rtl; /* Right-to-left for Arabic */
+
+}
+
+
+.custom-box {
+    background-color: #537888; /* #537888 */  /* #7A9EAE */
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.inner-wrapper {
+    width: 75%; /* Occupy 3/4 of the parent width */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Keep content aligned */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.number-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* Center horizontally */
+}
+
+.number-wrapper-a {
+    width: 75%; /* 2/3 of the custom-box width */
+}
+
+.number-wrapper-b {
+    width: 25%; 
+}
+
+
+.number-input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 15px; /* Space for custom arrows */
+    border: 1px solid rgba(181, 181, 181, 0.22);
+    border-radius: 15px;
+    color: #595C5E;
+    background-color: white;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 16px;
+    text-align: right;
+    direction: rtl;
+    outline: none; /* Remove black border on focus */
+}
+
+/* Remove default arrows in Chrome, Safari, Edge */
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Error border style */
+.error-border {
+    border: 1px solid #BC403A !important;
+    box-shadow: 0 0px 10px #BC403A;
+}
+
+/* Arrow container */
+.arrow-container {
+    position: absolute;
+    left: 10px; /* Position to the left of the input */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.arrow-icon {
+    font-size: 12px; /* Make icons smaller */
+    color: #595C5E;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.dropdown-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* Center horizontally */
+    width: 50%; 
+}
+
+
+
+/* Wrapper styling */
+.dropdown-wrapper-a {
+    position: relative;
+    width: 100%;
+}
+
+/* Input styling */
+.dropdown-input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 15px;
+    border: 1px solid rgba(181, 181, 181, 0.22);
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 16px;
+    color: #595C5E;
+    text-align: right;
+    direction: rtl;
+    outline: none;
+}
+
+/* Placeholder text color */
+.dropdown-input::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+/* Arrow icon styling */
+.dropdown-arrow-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #595C5E;
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgba(181, 181, 181, 0.22);
+    border-radius: 0 0 15px 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 16px;
+    color: #595C5E;
+    text-align: right;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Highlight active item in dropdown */
+.dropdown-menu li.active {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    color: #537888;
+    font-weight: bold;
+}
+
+
+
+
+
+.number-input.inactive {
+    background-color: #f0f0f0; /* Light gray background */
+    color: rgb(163, 163, 163);; /* Gray text color */
+    cursor: not-allowed; /* Show disabled cursor */
+    border: 1px solid #d0d0d0; /* Lighter border */
+    padding-right: 10px;
+}
+
+/* Placeholder text color */
+.number-input::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+#sorahContainer {
+    display: flex;
+    flex-direction: column; /* Arrange child elements vertically */
+    gap: 15px; /* Add space between sorah containers */
+}
+
+.inner-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; /* Space between reset button and inner-wrapper */
+}
+
+.empty-wrapper {
+    width: 11.11%;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-button {
+    width: 40px; /* Take up 12.5% of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px; /* Slightly larger icon size */
+    color: rgba(255, 255, 255, 0.7); /* Slightly brighter color */
+    border-radius: 50%; /* Make it circular */
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 10px; /* Add padding for better click area */
+}
+
+.reset-button:hover {
+    color: #f8f9fa; /* Brighter icon color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.reset-button:active {
+    transform: scale(1.1); /* Slightly reduce size on click for interaction feedback */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on active */
+}
+
+.reset-button i {
+    pointer-events: none; /* Ensure the icon itself doesn't interfere with hover effects */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sorahContainer {
+    position: relative; /* Ensure positioning context for the controls */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.custom-box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+
+.sorahContainer:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sorah-controls {
+    position: absolute;
+    top: -30px; /* Slightly above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevent interaction when hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sorahContainer:hover .sorah-controls {
+    opacity: 1; /* Visible on hover */
+    visibility: visible;
+}
+
+.sorah-controls button {
+    background-color: transparent; /* No background for the button */
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease, box-shadow 0.3s ease;
+    color: #6c757d; /* Light gray icon color */
+}
+
+.sorah-controls button:hover {
+    color: #537888; /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.sorah-controls button:active {
+    transform: scale(1.1); /* Slight reduction on click */
+}
+
+.sorah-controls i {
+    font-size: 20px; /* Adjust icon size */
+}
+
+
+
+
+
+
+
+
+
+
+/* Ayah text styling */
+.ayah-text {
+    font-family: 'Amiri Quran', serif;
+    font-size: 26px;
+    text-align: center;
+    direction: rtl;
+    color: #404040;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 1; /* Text starts visible */
+    max-height: 1000px; /* Large enough to fit the content */
+    overflow: hidden; /* Hide overflow */
+    transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth opacity and height transitions */
+}
+
+.ayah-text.hidden {
+    opacity: 0; /* Fade out the text */
+    max-height: 0; /* Collapse the text container */
+    pointer-events: none; /* Disable interactions when hidden */
+}
+
+/* Ayah container styling with smooth transition */
+#ayahContainer {
+    overflow: hidden; /* Hide anything that overflows */
+    max-height: 500px; /* Set an initial max-height (adjust as necessary) */
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.5s ease, visibility 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Class to hide the container */
+.container-hidden {
+    max-height: 0; /* Collapse the container */
+    visibility: hidden; /* Hide visibility */
+    opacity: 0; /* Fade out */
+}
+
+
+
+
+
+
+
+/* Note style */
+.note {
+    position: absolute;
+    top: 100%; /* Positioned below the controls */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F7E6E5;
+    color: #BC403A;
+    padding: 10px 20px;
+    border: 1px solid #F1D4D3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    z-index: 1500;
+    white-space: nowrap; /* Prevent text wrapping */
+    opacity: 0;
+    animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
