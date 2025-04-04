@@ -7,6 +7,7 @@
 > - The hosted version uses a **sample database**, not the full one due to content rights.  
 > - The web app may be **slow to load on the first visit** because it is hosted on a free server.
 
+<br><br>
 
 ## 📌 Project Description
 
@@ -25,7 +26,7 @@ Traditionally, accessing this knowledge required navigating dense classical text
 - 🗃️ Organizing it into a structured MySQL database
 - 🌐 Providing a user-friendly web interface to explore and analyze the data efficiently
 
-> ### Key capabilities include:
+> ### 🔧 Key capabilities include:
 
 - 🔍 Searching for specific **Khilāfāt** (اختلافات) such as:
   - **Hamz Sākin** (همز ساكن)
@@ -41,7 +42,7 @@ Traditionally, accessing this knowledge required navigating dense classical text
 
 
 
-### 🔍 Real Use Case
+> ### 🔍 Real Use Case
 
 For example, a student wants to know how the **Hamzah Sākinah** is pronounced in a certain word by **Imam Qālūn** via **Tariq Abi Nasheet**. Instead of searching multiple pages in a book, they can:
 
@@ -89,11 +90,12 @@ node index.js
 By default, the server runs on `http://localhost:3000`.
 
 
-نسخ## 🚀 Getting Started
+<br><br>
+
 ## 🎥 Demo & Walkthrough
 
 
----
+
 
 ## 📖 Features
 
