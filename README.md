@@ -83,8 +83,8 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
     <img src="demo/Demo2.gif" width="35%" alt="AlAsher Web App Demo">
   </a>
 </p>
-🔥 [Watch the full demo video here!](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view)
 
+🔥 [Watch the full demo video here!](https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view) 
 
 
 <br><br>
