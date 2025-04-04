@@ -1,11 +1,12 @@
-# Alqeraat Alasher - QURANIC Web App
+# Alqeraat Alasher – QURANIC Web App
 
-📅 **Development Duration:** October 2024 – February 2025  
-🌐 **Live Demo:** [Visit the Web App](https://your-hosted-web-link.com)
+📅 **Development Period:** October 2024 – February 2025  
+🌐 **Live Demo:** [Visit the Web App!🔥🔥](https://your-hosted-web-link.com)
 
-> **⚠️ Note:**  
-> - The hosted version uses a **sample database**, not the full one due to content rights.  
-> - The web app may be **slow to load on the first visit** because it is hosted on a free server.
+> ⚠️ **Important Notes:**  
+> - The hosted version uses a **sample database** due to content rights — not the full dataset.  
+> - The app may take a few seconds to load on first visit, as it is hosted on a **free server**.
+
 
 <br><br>
 
@@ -56,7 +57,7 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
 
 <br><br>
 
-### 📖 Features
+## 📖 Features
 
 - **🔍 Search Qira’at Data**: Search for readings by **Qāri’**, **Rāwī**, and **Ṭarīq**.
 - **🔧 Advanced Filtering**: Filter by **Qāri’**, **Rāwī**, or **Ṭarīq**.
