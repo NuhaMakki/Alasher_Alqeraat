@@ -26,7 +26,8 @@ Traditionally, accessing this knowledge required navigating dense classical text
 - 🗃️ Organizing it into a structured MySQL database
 - 🌐 Providing a user-friendly web interface to explore and analyze the data efficiently
 
-### 🔧 Key capabilities include:
+
+> ### 🔧 Key capabilities include:
 
 - 🔍 Searching for specific **Khilāfāt** (اختلافات) such as:
   - **Hamz Sākin** (همز ساكن)
@@ -42,7 +43,7 @@ Traditionally, accessing this knowledge required navigating dense classical text
 
 
 
-### 🔍 Real Use Case
+> ### 🔍 Real Use Case
 
 For example, a student wants to know how the **Hamzah Sākinah** is pronounced in a certain word by **Imam Qālūn** via **Tariq Abi Nasheet**. Instead of searching multiple pages in a book, they can:
 
@@ -59,6 +60,7 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
 - **Database:** MySQL
 
 
+<br><br>
 
 ## 🚀 Getting Started
 
@@ -75,12 +77,24 @@ npm install
 ```
 
 ### 3. Configure the Database
-Note: Database is not included in the repository due to size and content rights.
-To connect your own MySQL database, edit the configuration file: `/config/database.js`
-```bash
+Note: Only a sample Database is included due to content rights.
+To connect your own MySQL database, Modify `/config/database.js` to match your MySQL configuration (if needed):
 
+1. Open the configuration file: `/config/database.js`
+2. Edit the MySQL settings:
+
+edit the configuration file: `/config/database.js`
+```bash
+const pool = mysql.createPool({
+    host: process.env.DB_HOST,         // Database host
+    database: process.env.DB_NAME,     // Database name
+    user: process.env.DB_USER,         // Database user
+    password: process.env.DB_PASSWORD, // Database password
+    port: process.env.DB_PORT,         // Database port
+    // Additional settings as required
+});
 ```
-Ensure your MySQL server is running and you have imported your own version of the database.
+
 
 ### 4. Run the Project
 ```bash
