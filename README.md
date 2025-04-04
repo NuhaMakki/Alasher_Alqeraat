@@ -1,9 +1,10 @@
 # Alqeraat Alasher – QURANIC Web App
 
 📅 **Development Period:** October 2024 – February 2025  
+🌐 **Live Demo:** [Visit the Web App!](https://your-hosted-web-link.com) 🔥🔥
 <p align="center">
   <a href="https://your-hosted-web-link.com" target="_blank">
-    <img src="demo/Alasher.png" width="75%" alt="AlAsher Web App">
+    <img src="demo/Alasher.png" width="70%" alt="AlAsher Web App">
   </a>
 </p>
 
@@ -80,7 +81,7 @@ For example, a student wants to know how the **Hamzah Sākinah** is pronounced i
 
 <p align="center">
   <a href="https://drive.google.com/file/d/199qIqkPnWRw0f8d92UPfGUM1b9IRDjn5/view?usp=sharing" target="_blank">
-    <img src="demo/Demo.gif" width="70%" alt="AlAsher Web App Demo">
+    <img src="demo/Demo2.gif" width="40%" alt="AlAsher Web App Demo">
   </a>
 </p>
 
