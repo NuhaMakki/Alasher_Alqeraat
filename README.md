@@ -7,10 +7,7 @@
   </a>
 </p>
 
-🌐 **Live Demo:** [Visit the Web App!](https://alasher-alqeraat.onrender.com) 🔥🔥
-> ⚠️ **Important Notes:**  
-> - The hosted version uses a **sample database** due to content rights — not the full dataset.  
-> - The app may take a few seconds to load on first visit, as it is hosted on a **free server**.
+🌐 **Live Demo:** [Visit the Web App!](https://alqeraat.cleverapps.io/) 🔥🔥
 
 <br><br>
 
